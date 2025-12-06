@@ -1,0 +1,87 @@
+@import "../../styles/variables";
+
+.section {
+  max-width: $max-width;
+  margin: 1.5rem auto;
+  padding: 1.25rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(12,18,30,0.03);
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 1.25rem;
+}
+
+/* info column */
+.info {
+  p { color: $muted; }
+}
+
+.social {
+  list-style: none;
+  padding: 0;
+  margin: 0.6rem 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.social a { color: $primary; }
+
+/* form */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.95rem;
+}
+
+input, textarea {
+  padding: 0.55rem 0.7rem;
+  border-radius: 8px;
+  border: 1px solid rgba(15,23,42,0.06);
+  font-size: 0.95rem;
+  resize: vertical;
+}
+
+.actions {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  margin-top: 0.4rem;
+}
+
+.primary {
+  background: $primary;
+  color: white;
+  padding: 0.55rem 0.8rem;
+  border-radius: 8px;
+  font-weight: 600;
+  border: none;
+}
+
+.secondary {
+  padding: 0.45rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid rgba(15,23,42,0.06);
+  color: $text;
+  text-decoration: none;
+}
+
+.success { color: green; margin-top: 0.5rem; }
+.error { color: #c62828; margin-top: 0.5rem; }
+
+.small { color: $muted; font-size: 0.9rem; }
+
+/* Responsive */
+@media (max-width: 980px) {
+  .inner { grid-template-columns: 1fr; }
+}

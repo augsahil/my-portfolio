@@ -1,0 +1,95 @@
+@import "../../styles/variables";
+
+.section {
+  max-width: $max-width;
+  margin: 1.5rem auto;
+  padding: 1.25rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(12,18,30,0.03);
+}
+
+.inner {
+  padding: 0;
+}
+
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.item {
+  padding: 0.9rem;
+  border-radius: 10px;
+  border: 1px solid rgba(15,23,42,0.04);
+  background: linear-gradient(180deg, rgba(11,108,255,0.02), white);
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.meta {
+  display: flex;
+  flex-direction: column;
+}
+
+.company {
+  font-weight: 700;
+  color: $text;
+}
+
+.role {
+  font-size: 0.95rem;
+  color: $muted;
+}
+
+.period {
+  font-size: 0.9rem;
+  color: $muted;
+  min-width: 110px;
+  text-align: right;
+}
+
+.location {
+  font-size: 0.95rem;
+  color: $muted;
+  margin-bottom: 0.6rem;
+}
+
+.bullets {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: $muted;
+  line-height: 1.5;
+  margin-bottom: 0.8rem;
+
+  li { margin-bottom: 0.45rem; }
+}
+
+.tech {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.techTag {
+  background: rgba(11,108,255,0.08);
+  padding: 0.25rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  color: $text;
+}
+
+/* responsive */
+@media (max-width: 720px) {
+  .head { flex-direction: column; align-items: flex-start; gap: 0.35rem; }
+  .period { text-align: left; }
+}

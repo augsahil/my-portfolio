@@ -1,0 +1,74 @@
+@import "../../styles/variables";
+
+.section {
+  max-width: $max-width;
+  margin: 1.5rem auto;
+  padding: 1.25rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(12,18,30,0.03);
+}
+
+.inner {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+}
+
+.text {
+  flex: 1;
+
+  h2 { margin-bottom: 0.5rem; }
+  p { color: $muted; margin-bottom: 0.75rem; line-height: 1.5; }
+}
+
+.actions {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: 0.6rem;
+}
+
+.primary {
+  background: $primary;
+  color: white;
+  padding: 0.5rem 0.8rem;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.secondary {
+  padding: 0.45rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid rgba(15,23,42,0.06);
+  color: $text;
+}
+
+.side {
+  width: 260px;
+  flex-shrink: 0;
+
+  h3 { margin: 0 0 0.6rem 0; }
+}
+
+.skills {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.45rem;
+}
+
+.skill {
+  background: rgba(11,108,255,0.04);
+  padding: 0.45rem 0.6rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  color: $text;
+}
+
+/* Responsive */
+@media (max-width: 880px) {
+  .inner { flex-direction: column; }
+  .side { width: 100%; order: 2; }
+}

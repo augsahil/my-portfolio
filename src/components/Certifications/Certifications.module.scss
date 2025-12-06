@@ -1,0 +1,54 @@
+@import "../../styles/variables";
+
+.section {
+  max-width: $max-width;
+  margin: 1.5rem auto;
+  padding: 1.25rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(12,18,30,0.03);
+}
+
+.inner { }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.9rem;
+  margin-top: 0.8rem;
+}
+
+.card {
+  padding: 0.85rem;
+  border-radius: 10px;
+  border: 1px solid rgba(15,23,42,0.04);
+  background: linear-gradient(180deg, rgba(11,108,255,0.02), white);
+}
+
+.title {
+  font-size: 0.98rem;
+  margin: 0 0 0.35rem 0;
+}
+
+.issuer {
+  color: $muted;
+  font-size: 0.9rem;
+  margin-bottom: 0.6rem;
+}
+
+.actions { display: flex; gap: 0.5rem; align-items: center; }
+
+.view {
+  background: $primary;
+  color: white;
+  padding: 0.45rem 0.65rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.noLink {
+  color: $muted;
+  font-size: 0.9rem;
+}
