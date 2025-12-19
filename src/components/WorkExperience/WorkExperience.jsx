@@ -14,7 +14,8 @@ export default function WorkExperience() {
             <li key={item.id} className={styles.item}>
               <div className={styles.head}>
                 <div className={styles.meta}>
-                  <strong className={styles.company}>{item.company}</strong>
+                  <div><img src={item.logo} alt="logo" style={{ height: '1em', width: '1em', marginRight: '10px', verticalAlign: 'middle' }} />
+                    <strong className={styles.company}>{item.company}</strong></div>
                   <span className={styles.role}>{item.title}</span>
                 </div>
                 <div className={styles.period}>
@@ -25,7 +26,7 @@ export default function WorkExperience() {
               <div className={styles.body}>
                 <p className={styles.location}>{item.location}</p>
                 <ul className={styles.bullets}>
-                  {item.bullets.map((b,i) => <li key={i}>{b}</li>)}
+                  {item.bullets.map((b, i) => <li key={i}>{b}</li>)}
                 </ul>
 
                 <div className={styles.tech}>

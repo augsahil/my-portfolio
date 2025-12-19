@@ -15,30 +15,29 @@ export default function About() {
         <div className={styles.text}>
           <h2 id="about-heading">About</h2>
 
-          <p>
-            I'm Sahil — a frontend engineer who builds fast, accessible, and maintainable user interfaces.
-            I enjoy component-driven design, optimizing performance, and improving developer experience.
-          </p>
 
           <p>
-            I work primarily with React and modern frontend tooling. I care about readable code, clear documentation,
-            and delivering business impact through measurable improvements.
-          </p>
+            Full-Stack Software Engineer with 3+ years of experience at Accenture, specializing in frontend-centric development and AI-driven backend systems. Strong expertise in React.js, Next.js, TypeScript, Tailwind CSS, MUI, and Storybook, with a proven track record of building scalable, accessible, and high-performance user interfaces for enterprise clients like Hindustan Unilever and Bank of Baroda. <br /><br />
 
-          <div className={styles.actions}>
-            <a className={styles.primary} href="/resume.pdf" download aria-label="Download resume">
-              Download CV
-            </a>
-            <a className={styles.secondary} href="#projects">See projects</a>
-          </div>
+            Experienced in designing and integrating backend services using Node.js, FastAPI, and microservices architectures, along with hands-on work in AI systems including LLM integrations, RAG pipelines, LangGraph, and automation workflows. Adept at improving performance, accessibility (WCAG), and developer efficiency through reusable component systems and optimized CI/CD pipelines on AWS and Azure. <br /><br />
+
+            A results-driven engineer with strong problem-solving skills, clear stakeholder communication, and a long-term focus on building impactful, production-ready software at scale.
+          </p>
         </div>
 
-        <aside className={styles.side} aria-labelledby="skills-heading">
+        <div className={styles.side} aria-labelledby="skills-heading">
           <h3 id="skills-heading">Skills</h3>
           <ul className={styles.skills}>
             {skills.map(s => <li key={s} className={styles.skill}>{s}</li>)}
           </ul>
-        </aside>
+        </div>
+
+        <div className={styles.actions}>
+          <a className={styles.primary} href="public/sahil-kumar.pdf" download aria-label="Download resume">
+            Download CV
+          </a>
+          <a className={styles.secondary} href="#projects">See projects</a>
+        </div>
       </div>
     </section>
   );

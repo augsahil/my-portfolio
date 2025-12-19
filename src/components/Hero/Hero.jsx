@@ -7,21 +7,18 @@ export default function Hero() {
       <div className={styles.inner}>
         <div className={styles.content}>
           <h1 id="hero-heading" className={styles.title}>
-            Hi — I'm Sahil Kr.
+            Hi — I'm Sahil Kumar
           </h1>
           <p className={styles.lead}>
-            Frontend Engineer building fast, accessible web apps with React and clean UI design.
+            Software Engineer — Full-Stack Developer — AI Engineer
           </p>
-
-          <div className={styles.ctaRow}>
-            <a className={styles.primary} href="#projects">See my work</a>
-            <a className={styles.secondary} href="#contact">Get in touch</a>
-          </div>
+          <br />
 
           <ul className={styles.meta}>
-            <li>React · SCSS</li>
-            <li>TypeScript-ready</li>
-            <li>Accessible UI</li>
+            <li>Full-Stack Software Engineer with strong expertise in React, Next.js, Node.js, and FastAPI, building scalable, high-performance web applications and microservices.
+            </li>
+            <li>
+              Experienced AI Engineer specializing in LLM integrations, RAG pipelines, and multi-agent systems, with solid cloud, DevOps, and system design fundamentals.</li>
           </ul>
         </div>
 
@@ -29,7 +26,7 @@ export default function Hero() {
           {/* Replace with real image path in public/images/ */}
           <img
             className={styles.avatar}
-            src="/images/avatar.jpg"
+            src="src/assets/sahil.jpg"
             alt="Portrait of Sahil"
             width="160"
             height="160"

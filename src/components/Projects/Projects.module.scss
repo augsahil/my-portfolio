@@ -1,4 +1,4 @@
-@import "../../styles/variables";
+@use "../../styles/variables" as *;
 
 .section {
   max-width: $max-width;
@@ -98,6 +98,7 @@
   color: $muted;
   margin-bottom: 0.8rem;
   font-size: 0.95rem;
+  text-align: justify;
 }
 
 .meta {
@@ -119,7 +120,14 @@
   font-size: 0.8rem;
 }
 
+.links {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 0.6rem;
+}
+
 .links a {
+  margin-right: 0.6rem;
   margin-left: 0.6rem;
   font-size: 0.9rem;
   color: $primary;

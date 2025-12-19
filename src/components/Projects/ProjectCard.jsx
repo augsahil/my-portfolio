@@ -17,12 +17,12 @@ export default function ProjectCard({ p }) {
           <div className={styles.tags}>
             {p.tech.map(t => <span key={t} className={styles.tag}>{t}</span>)}
           </div>
-
+</div>
           <div className={styles.links}>
-            {p.live && <a href={p.live} target="_blank" rel="noopener noreferrer">Live</a>}
             {p.github && <a href={p.github} target="_blank" rel="noopener noreferrer">Code</a>}
+            {p.live && <a href={p.live} target="_blank" rel="noopener noreferrer">Live</a>}
           </div>
-        </div>
+        
       </div>
     </article>
   );

@@ -44,7 +44,7 @@ export default function Header() {
   return (
     <header className={styles.header} id="site-header">
       <div className={styles.container}>
-        <h1 className={styles.logo}>Sahil</h1>
+        <h1 className={styles.logo}>SAHIL KUMAR</h1>
 
         <nav className={`${styles.nav} ${mobileOpen ? styles.open : ""}`} aria-label="Main navigation">
           {LINKS.map(l => {

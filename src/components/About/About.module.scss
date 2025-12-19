@@ -1,4 +1,4 @@
-@import "../../styles/variables";
+@use "../../styles/variables" as *;
 
 .section {
   max-width: $max-width;
@@ -10,7 +10,7 @@
 }
 
 .inner {
-  display: flex;
+  // display: flex;
   gap: 1.25rem;
   align-items: flex-start;
 }
@@ -24,6 +24,7 @@
 
 .actions {
   display: flex;
+  justify-content: flex-end;
   gap: 0.6rem;
   margin-top: 0.6rem;
 }
@@ -44,7 +45,7 @@
 }
 
 .side {
-  width: 260px;
+  width: 50%;
   flex-shrink: 0;
 
   h3 { margin: 0 0 0.6rem 0; }
@@ -54,16 +55,16 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 0.45rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
 }
 
 .skill {
-  background: rgba(11,108,255,0.04);
-  padding: 0.45rem 0.6rem;
-  border-radius: 8px;
-  font-size: 0.95rem;
+  background: rgba(11,108,255,0.08);
+  padding: 0.25rem 0.45rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
   color: $text;
 }
 

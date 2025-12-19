@@ -7,20 +7,20 @@ export default function Certifications() {
   return (
     <section id="certifications" className={styles.section} aria-labelledby="certs-heading">
       <div className={styles.inner}>
-        <h2 id="certs-heading">Certifications</h2>
+        <h2 id="certs-heading">Training & Certifications</h2>
 
         <div className={styles.grid}>
           {certs.map(c => (
             <article key={c.id} className={styles.card}>
               <h3 className={styles.title}>{c.title}</h3>
               <p className={styles.issuer}>{c.issuer} · <span className={styles.year}>{c.year}</span></p>
-              <div className={styles.actions}>
+              {/* <div className={styles.actions}>
                 {c.link ? (
                   <a className={styles.view} href={c.link} target="_blank" rel="noopener noreferrer">View</a>
                 ) : (
                   <span className={styles.noLink}>No link</span>
                 )}
-              </div>
+              </div> */}
             </article>
           ))}
         </div>

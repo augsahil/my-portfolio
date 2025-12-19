@@ -1,4 +1,4 @@
-@import "../../styles/variables";
+@use "../../styles/variables" as *;
 
 .hero {
   max-width: $max-width;
@@ -17,6 +17,7 @@
 
 .content {
   flex: 1;
+  justify-items: center;
 }
 
 .title {
@@ -28,6 +29,7 @@
 .lead {
   color: $muted;
   margin-bottom: 1rem;
+  text-align: justify;
 }
 
 .ctaRow {
@@ -53,7 +55,7 @@
 
 .meta {
   list-style: none;
-  display: flex;
+  // display: flex;
   gap: 1rem;
   color: $muted;
   font-size: 0.9rem;
@@ -70,6 +72,7 @@
   height: 160px;
   border-radius: 999px;
   object-fit: cover;
+  object-position: 50% 20%;
   border: 4px solid rgba(11,108,255,0.08);
 }
 
